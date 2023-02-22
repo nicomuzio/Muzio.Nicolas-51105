@@ -1,0 +1,319 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #000;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    color: #e50914;
+  }
+  
+  /* Formulario */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #141414;
+    border-radius: 5px;
+  }
+  
+  form label {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  form select {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  form button {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  form button:hover {
+    background-color: #ff0a16;
+  }
+  
+  /* Resultados */
+  .resultados {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #141414;
+    border-radius: 5px;
+  }
+  
+  .resultados h2 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .resultados p {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .resultados button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .resultados button:hover {
+    background-color: #ff0a16;
+  }
+  
+  /* Estilos específicos de los botones */
+  button.btn-8 {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  button.btn-10 {
+    background-color: #e50914;
+    color: #fff;
+  }
+  
+  button.btn-12 {
+    background-color: #333;
+    color: #fff;
+  }
+  /* Estilo general */
+body {
+    background-color: #141414;
+    color: #e5e5e5;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Estilo de los botones */
+  button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #b2070f;
+  }
+  
+  /* Estilo de los campos de texto */
+  input[type="text"],
+  input[type="password"] {
+    background-color: #333;
+    color: #e5e5e5;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 2px #e50914;
+  }
+  
+  /* Estilo de los selectores */
+  select {
+    background-color: #333;
+    color: #e5e5e5;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  /* Estilo de los mensajes de error */
+  .error-message {
+    color: #e50914;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  /* Estilo del contenedor de las contraseñas */
+  .passwords-container {
+    margin-top: 32px;
+  }
+  
+  /* Estilo de las contraseñas */
+  .password {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #1f1f1f;
+    border-radius: 4px;
+  }
+  
+  .password strong {
+    color: #e50914;
+  }
+  
+  /* Estilo del botón de exportar */
+  .export-button {
+    margin-top: 16px;
+  }
+/* Estilo para la card principal */
+.card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 600px;
+  }
+  
+  /* Estilo para el título */
+  .card h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo para los campos de entrada */
+  .form-input {
+    background-color: #141414;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* Estilo para el botón generar contraseña */
+  .generate-password-btn {
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* Estilo para los botones de opciones de contraseña */
+  .password-options button {
+    background-color: #141414;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 33.33%;
+  }
+  
+  /* Estilo para el campo de contraseña generada */
+  .password-result {
+    background-color: #141414;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Estilo para el botón exportar a excel */
+  .export-to-excel-btn {
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para centrar el campo de contraseña generada y el botón de exportar */
+  .password-result, .export-to-excel-btn {
+    display: inline-block;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #generated-password {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #export-btn {
+    margin-top: 20px;
+    align-self: center;
+  }
+  @media (max-width: 768px) {
+    /* estilos para pantallas con un ancho máximo de 768px */
+  }
+  
+  @media (max-width: 480px) {
+    /* estilos para pantallas con un ancho máximo de 480px */
+  }
+        
