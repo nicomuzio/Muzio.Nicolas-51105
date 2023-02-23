@@ -38,15 +38,7 @@ function generatePassword() {
   document.getElementById("export").style.display = "inline";
 }
 
-function exportToExcel() {
-  const worksheetName = "Contraseñas";
-  const workbook = XLSX.utils.book_new();
-  const worksheet = XLSX.utils.json_to_sheet(passwords);
-  XLSX.utils.book_append_sheet(workbook, worksheet, worksheetName);
 
-  const fileName = "contraseñas.xlsx";
-  XLSX.writeFile(workbook, fileName);
-}
 
 document.getElementById("generate").addEventListener("click", generatePassword);
-document.getElementById("export").addEventListener("click", exportToExcel);
+
