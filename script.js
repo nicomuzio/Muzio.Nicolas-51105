@@ -10,7 +10,8 @@ function generatePassword() {
   const includeUppercase = document.getElementById("uppercase").checked;
   const includeNumbers = document.getElementById("numbers").checked;
   const includeSymbols = document.getElementById("symbols").checked;
-  const socialNetwork = document.getElementById("social-network").value;
+  const socialNetwork = prompt("Por favor, ingresa el nombre de la red social o sitio web:");
+
 
   let charSet = "";
   if (includeLowercase) {
@@ -34,7 +35,8 @@ function generatePassword() {
 
   passwords.push({ socialNetwork, password });
 
-  document.getElementById("password").value = password;
+  alert(`Tu contraseña para ${socialNetwork} es: ${password}`);
+
   document.getElementById("export").style.display = "inline";
 }
 
