@@ -10,7 +10,8 @@ function generatePassword() {
   const includeUppercase = document.getElementById("uppercase").checked;
   const includeNumbers = document.getElementById("numbers").checked;
   const includeSymbols = document.getElementById("symbols").checked;
-  const socialNetwork = document.getElementById("social-network").value;
+  const socialNetwork = prompt("Por favor, ingresa el nombre de la red social o sitio web:");
+
 
   let charSet = "";
   if (includeLowercase) {
@@ -34,11 +35,21 @@ function generatePassword() {
 
   passwords.push({ socialNetwork, password });
 
-  document.getElementById("password").value = password;
+  alert(`Tu contraseña para ${socialNetwork} es: ${password}`);
+
   document.getElementById("export").style.display = "inline";
 }
 
+function exportToExcel() {
+  const worksheetName = "Contraseñas";
+  const workbook = XLSX.utils.book_new();
+  const worksheet = XLSX.utils.json_to_sheet(passwords);
+  XLSX.utils.book_append_sheet(workbook, worksheet, worksheetName);
 
+  const fileName = "contraseñas.xlsx";
+  XLSX.writeFile(workbook, fileName);
+}
 
 document.getElementById("generate").addEventListener("click", generatePassword);
+document.getElementById("export").addEventListener("click", exportToExcel);
 
