@@ -1,49 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Generador de contraseñas</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/style.css">
-
-  </head>
-  <body>
-    
-    <center>
-    <h1>Generador de contraseñas</h1>
-    <form>
-      <label for="length">Longitud de la contraseña:</label>
-      <input type="number" id="length" name="length" min="8" max="12" value="8" />
-      <br />
-      <br />
-      <label>Caracteres incluidos:</label>
-      <br />
-      <input type="checkbox" id="lowercase" name="lowercase" checked />
-      <label for="lowercase">Letras minúsculas</label>
-      <br />
-      <input type="checkbox" id="uppercase" name="uppercase" checked />
-      <label for="uppercase">Letras mayúsculas</label>
-      <br />
-      <input type="checkbox" id="numbers" name="numbers" checked />
-      <label for="numbers">Números</label>
-      <br />
-      <input type="checkbox" id="symbols" name="symbols" checked />
-      <label for="symbols">Caracteres especiales</label>
-      <br />
-      <br />
-      
-      
-      <br />
-      <br />
-      <button type="button" id="generate">Generar</button>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Generador de Contraseñas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ui container">
+    <h1 class="ui header">Generador de Contraseñas</h1>
+    <form class="ui form">
+      <div class="field">
+        <label for="password-length">Largo de la contraseña (entre 6 y 15 caracteres)</label>
+        <input type="number" id="password-length" min="6" max="15" value="8" required>
+      </div>
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" id="include-uppercase">
+          <label for="include-uppercase">Incluir mayúsculas</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" id="include-lowercase">
+          <label for="include-lowercase">Incluir minúsculas</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" id="include-numbers">
+          <label for="include-numbers">Incluir números</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" id="include-symbols">
+          <label for="include-symbols">Incluir caracteres especiales (!@#$%^&*()_+-=[]{}\\|;:'",.<>/?)</label>
+        </div>
+      </div>
+      <button class="ui primary button" type="button" id="generate-btn">Generar Contraseña</button>
     </form>
-    <br />
-   
-    
-    <br />
-    <br />
-    <button type="button" id="export">Exportar a Excel</button>
-  </center>
+    <div id="result-box"></div>
+  </div>
   <script src="script.js"></script>
-  </body>
+</body>
 </html>
